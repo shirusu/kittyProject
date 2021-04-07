@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 const BreedCard = ({breed}) => {
     return (
-        <div className='w-1/4 px-3 mb-5'>
+        <div className='w-full lg:w-1/4 md:w-1/2 sm:w-1 px-3 mb-5'>
             <Link to={`/breeds/${breed.id}`}>
                 <div className="bg-gray-400 flex justify-center items-center">
                     <div
