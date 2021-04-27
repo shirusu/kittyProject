@@ -44,5 +44,4 @@ const BreedDetails = () => {
             </section>
     );
 };
-
 export default BreedDetails;

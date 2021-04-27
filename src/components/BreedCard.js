@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import Rating from "./Rating";
 
 const BreedCard = ({breed}) => {
     return (
@@ -22,6 +23,7 @@ const BreedCard = ({breed}) => {
                             className="bg-white bg-opacity-95 shadow-md rounded-r-xl p-4 flex flex-col mr-4 mb-8">
                             <h3 className="text-xl font-bold pb-2">{breed.name}</h3>
                             <p className="truncate text-gray-500 text-sm">{breed.description}</p>
+                            <Rating rating={breed.health_issues} color='red'/>
                         </div>
                     </div>
                 </div>
